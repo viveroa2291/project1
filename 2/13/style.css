@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.outer{
+    background-color: #FF90E2;
+}
+
+.inner{
+    background-color: #A9CCCC;
+    margin: 10px;
+    
+    border-top: 3px dashed blue;
+    border-bottom: 10px dashed red;
+    border: 3px dashed #FFF6C9;
+    padding: 20px;
+    width:  200px;
+    height: 200px;
+    box-sizing: border-box;
+
+    display: inline-block;
+}

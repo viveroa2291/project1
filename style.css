@@ -1,0 +1,17 @@
+body {
+    font-family: sans-serif;
+}
+#date{
+    font-style: italic;
+    color: gray;
+}
+img{
+    width: 50%;
+    height: 200px;
+}
+.code{
+    background-color: darkgray;
+    white-space: pre;
+    border: 1px solid black;
+    border-radius: 10px;
+}
