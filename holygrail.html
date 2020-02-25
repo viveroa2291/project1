@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>
+
+    </title>
+    <style>
+        html, body, #root{
+            height: 100%;
+        }
+        body{
+            margin: 0;
+        }
+    #root{
+        display: flex;
+        flex-direction: column;
+    }
+#chester{
+    flex-grow: 2;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+#left-arm{
+    background-color: purple;
+    flex-basis: 200px;
+}
+#right-arm{
+    background-color: pink;
+}
+#torso{
+    background-color: red;
+    flex-grow: 1;
+}
+#header{
+    background-color: blue;
+}
+#footer{
+    background-color: green;
+}
+
+
+    
+    </style>
+</head>
+
+<body>
+    
+    <div id="root">
+       <header>header</header>
+       <div id="chester">chester</div>
+       <div id="left-arm">left</div>
+       <div id="torso">torso</div>
+       <div id="right-arm">right</div>
+    </div>
+    <footer>footer</footer>
+</body>
+
+
+</html>
