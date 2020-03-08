@@ -20,7 +20,6 @@ header{
      flex-direction: row;
      justify-content: space-evenly;
      align-items: flex-start;
-     border: 3px solid rgb(168, 86, 189);
      position: absolute;
      background-color: rgb(0, 0, 0, .75);
  }
@@ -39,10 +38,12 @@ header{
      color:cyan;
  }
  #merch{
+     position: relative;
+     display: inline-block;
      font-style: normal;
      cursor: pointer;
      padding: 0px 5px 0px 5px;
-    font-size: 25px;
+     font-size: 25px;
     border: 3px solid black;
     text-align: center;
  }
@@ -52,6 +53,27 @@ header{
  #merchLink{
     color: pink;
  }
+ .dropdown-content{
+     display:none;
+     background-color: lightslategray;
+ }
+ .dropdown-content #merches {
+    color: white;
+    text-decoration: none;
+    display: block;
+    border: 1px solid white;
+  }
+.dropdown-content #merches:hover{
+    background-color: black;
+}
+#merch:hover .dropdown-content{
+    display: block;
+}
+/*
+#merch:hover #merchLink{
+    background-color: lightslategray;
+}
+*/
  #about{
      font-style: initial;
      color: pink;
