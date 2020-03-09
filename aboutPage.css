@@ -1,5 +1,12 @@
 #prc{
     margin: 0;
+    padding: 15 0 15 0;
+
+    position: absolute;
     color: cyan;
     font-size: 100px;
+}
+.gym1Pic{
+    width: 1000px;
+    rotate: 180;
 }
