@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>...</title>
+  <style>
+      #photo{
+          position: fixed;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+        object-fit: contain;
+      }
+      #previous-button, #next-button{
+            font-size: 75px;
+            z-index: 1;
+            top: 50%;
+      }
+      #previous-button{
+          position: fixed;
+          left: 10px;
+      }
+      #next-button{
+          position: fixed;
+          right: 10px;
+          transform: scale(-1, -1);
+      }
+
+  </style>
+</head>
+<body>
+  <img id="photo">
+  <div id="previous-button" class="navigation-button">&#x2b05;</div>
+  <div id="next-button" class="navigation-button">&#x2b05;</div>
+
+  <script>
+// The list of image URLs
+const urls = [
+  'http://www.traveller.com.au/content/dam/images/g/u/n/q/h/0/image.related.articleLeadwide.620x349.gunpvd.png/1488330286332.png',
+  'http://images.mentalfloss.com/sites/default/files/styles/mf_image_16x9/public/57159-istock-486456250.jpg?itok=pYToxS1l&resize=1100x619',
+  'https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/australia/Quokka_Sam-West.jpg?crop=0,886,2365,1773&wid=1640&hei=1230&scl=1.4420731707317074',
+  'https://cdn.newsapi.com.au/image/v1/0b92e2f32090adb38fc51da0673f0c38?width=1024',
+];
+
+// The index (serial number) of the current image
+let i = 0;
+
+// Grab handles onto HTML elements.
+const previousButton = document.getElementById('previous-button');
+const nextButton = document.getElementById('next-button');
+const photo = document.getElementById('photo');
+
+function advance(delta) {
+  i = (i + delta + urls.length) % urls.length;
+  photo.src = urls[i];
+}
+
+previousButton.addEventListener('click', () => advance(-1));
+nextButton.addEventListener('click', () => advance(1));
+
+advance(0);
+  </script>
+</body>
+</html>

@@ -4,7 +4,6 @@
 <head>
   <title>Oprah 2020</title>
   <style>
-
 /* Add your CSS here. */
     h1{
         background-color: black;
@@ -29,6 +28,50 @@
         padding: 10px;
         border-left: 1px solid white;
     }
+    .categories{
+      border-top: 1px solid white;
+      list-style: none;
+      background-color: gray;
+      color: white;
+      display: flex;
+      justify-content: flex-start;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .category{
+      position: relative;
+      padding: 1px;
+      border-right: 1px solid white;
+      list-style: none;
+    }
+    .category:hover > .dropdown
+    {
+      display:t block;
+    }
+    .dropdown{
+      position: absolute;
+      list-style: none;
+      padding: 0;
+      left: 0;
+      top: 100%;
+      flex-wrap: nowrap;
+      display: none;
+    }
+    .dropdown li:hover, .category:hover
+    {
+      background-color: rgb(10, 10, 10);
+    }
+    .dropdown li{
+      border-top: 1px solid white;
+      padding: 10px;
+      margin: 0;
+      white-space: nowrap;
+    }
+    .dropdown > li{
+      display: block;
+      padding: 10px
+    }
   </style>
 </head>
 
@@ -37,13 +80,42 @@
     <h1>Oprah 2020: She's Not All Talk</h1>
   </header>
   <nav>
-    <ul>
-      <li>About</li>
-      <li>Blog</li>
-      <li>Contact</li>
-      <li>Donate</li>
-    </ul>
+    <ul class="categories">
+      <li class="category">
+           About
+      <ul class="dropdown"> 
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+      </ul> 
+      </li>
+      <li class="category">
+        Blog
+        <ul class="dropdown"> 
+          <li>hi</li>
+          <li>a</li>
+          <li>b</li>
+          <li>c</li>
+          <li>d</li>
+        </ul>
+      </li>
+        <li class="category">
+           Contact
+           <ul class="dropdown">
+             <li>hi</li>
+           </ul>
+        </li>
+   <li class="category">
+     Donate
+   <ul class="dropdown">
+     <li>list</li>
+     <li>list</li>
+     <li>list</li>
+   </ul>
+  </li>    
+</ul>
   </nav>
+
 </body>
 
 </html>

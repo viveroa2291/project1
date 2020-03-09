@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style> 
+    body {
+        background-image: url('cork.jpg');
+      }
+      
+      .polaroid {
+        margin: 20px;
+        background-color: white;
+        box-shadow: -5px 5px 10px black;
+        display: inline-block;
+        position: relative;
+      }
+      .label {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 24pt;
+}
+.photo {
+  display: block;
+  padding: 10px 10px 0 10px;
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+}
+.pin {
+  width: 100px;
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  right: 0;
+  top: -9px;
+}
+.polaroid:nth-child(1) {
+  transform: rotate(5deg);
+}
+
+.polaroid:nth-child(2) {
+  transform: rotate(-3deg);
+}
+
+.polaroid:nth-child(3) {
+  transform: rotate(-1deg);
+}
+      </style>
+</head>
+<body>
+    
+    <div class="polaroid">
+        <img src="pin.svg" class="pin">
+        <img src="quokka.jpg" class="photo">
+        <div class="label">quokka</div>
+      </div>
+      
+      <div class="polaroid">
+        <img src="pin.svg" class="pin">
+        <img src="quokka.jpg" class="photo">
+        <div class="label">cuddle bunny</div>
+      </div>
+      
+      <div class="polaroid">
+        <img src="pin.svg" class="pin">
+        <img src="quokka.jpg" class="photo">
+        <div class="label">night fury</div>
+      </div>
+      
+</body>
+</html>
