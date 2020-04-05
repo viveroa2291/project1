@@ -1,0 +1,45 @@
+#enroll{
+    color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#enroll:hover{
+    text-shadow: 0 0 15px white;
+}
+#marketing{
+    border: solid black 5px;
+    background-color: red;
+    margin: 35 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#how{
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: solid 5px black;
+    width: fit-content;
+}
+#divider{
+    display: flex;
+    flex-direction: row;
+}
+.gymPic1
+{
+    margin-top: 25;
+    border: solid black 2px;
+    transform: rotate(90deg);
+    width: 550px;
+    height: 350px;
+}
+.gymPic2{
+    margin-top: 25;
+    border: solid black 2px;
+    transform: rotate(90deg);
+    width: 550px;
+    height: 350px;
+}

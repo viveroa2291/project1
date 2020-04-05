@@ -3,12 +3,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Page</title>
+    <title>Enrollment</title>
     <link rel="stylesheet" href="aboutPage.css">
     <link rel="stylesheet" href="projectHome.css"> 
+    <link rel="stylesheet" href="memberPage.css">
+    <link rel="stylesheet" href="enrollment.css">
 </head>
 <body>
-<header > <a id="safeGym1" href="https://viveroa2291.duckdns.org:8443/">safeGym </a> <a id="prc" href="https://viveroa2291.duckdns.org:8443/about.html">About Page</a> </header>
+    <header > <a id="safeGym1" href="https://viveroa2291.duckdns.org:8443/">safeGym </a> <a id="prc" href="https://viveroa2291.duckdns.org:8443/membership.html">Enrollment</a> </header>
     <div class="pages">
     <div id="home"><a id="homeLink" href="https://viveroa2291.duckdns.org:8443/" style="text-decoration:none">Home</a> </div> 
         <nav id="merch"><a id="merchLink" href="http://165.227.215.63:8000" target="_blank" style="text-decoration:none">Merchandise</a> 
@@ -18,8 +20,8 @@
             <a id="merches" href="https://www.lulus.com/?s_kwcid=AL%217824%213%21256957591090%21e%21%21g%21%21lulu&gclid=CjwKCAiA44LzBRB-EiwA-jJipPKICVKJlFDQIdBZA87viJy4zRJMT-30sn46S38fS_xNDDNJ6i5BwxoCNpQQAvD_BwE">Lulu</a>
             <a id="merches" href="https://www.nike.com/men?cp=99736393091_search_%7CNike%7CGOOGLE%7C71700000038284603%7CMEN_X_X_X_X-Device_X_Legacy_Core-NikeBrand_Exact%7Ce%7Cc&gclid=CjwKCAiA44LzBRB-EiwA-jJipGjd2K6XmNE21arsOqbgU2q4rNnMTTnwq5DLlE4gfcT0sGx5F7HeTRoCMv8QAvD_BwE&gclsrc=aw.ds">Nike</a>
             </ul> 
-        </nav>
-        <div id="about"> <a id="aboutLink" href="https://viveroa2291.duckdns.org:8443/about.html" target="_blank" style="text-decoration: none;">About</a></div>
+            </nav>
+            <div id="about"> <a id="aboutLink" href="https://viveroa2291.duckdns.org:8443/about.html" target="_blank" style="text-decoration: none;">About</a></div>
         <div id="exercises">Useful Exercises</div>
         <nav id="Member">
             <div id="enrollment"> <a id="memberLink" href="https://viveroa2291.duckdns.org:8443/membership.html" target="_blank" style="text-decoration: none;">Membership</a> </div>
@@ -28,22 +30,36 @@
                 <a id="mem" href="https://viveroa2291.duck.dns.org:8443/enrollment.html">Apply Today</a>
             </ul>
         </nav>
-    </div>
-<div id="Description">
-    <p id="para">The safeGym is designed for you to workout comfortably anywhere you are in the gym. </p>
-    <p id="para">We offer a general area where anyone can do their workouts in public, but also a lot of private rooms if you want to workout privately, and judge free.</p>
-    <p id="para">The main focus of this gym is to provide the customers the best environment to workout and work at the body of your dreams with no distractions.</p>
-    <p id="para">Members of safeGym get to use any part of the facility anytime they want.</p>
-    <p id="para">Private rooms are first come first serve, there is no reservations, everyone is free to use it.</p>
-</div>
-    <button id="gallery">Gallery</button>
-<span id="gal">
-    <img class="gym1Pic" src="./img/gym1.jpeg" alt="gym1">
-    <img class="gym2Pic" src="./img/gym2.jpeg" alt="gym2">
-    <img class="gym3Pic" src="./img/gym3.jpeg" alt="gym3">
-    <img class="gym4Pic" src="./img/gym4.jpeg" alt="gym4">
-</span>
-</div>
-    <img class="adan" src="./img/adan.jpg" alt="Adan">
+        </div>
+<div id="enrolling">
+    <form> 
+            <label for="fname"> First name: </label><br>
+            <input type="text" id="fname" name="fname"><br>
+
+            <label for="lname"> Last name: </label><br>
+            <input type="text" id="lname" name="lname"><br>       
+    
+            <label for="addy">Address:</label><br>
+            <input type="text" id="addy" name="addy"><br>
+
+            <label for="zip">Zip Code:</label><br>
+            <input type="number" id="zip" name="zip"><br>
+            
+
+            <label for="gender">Gender:</label><br>
+            <input type="radio" name="Male Option" id="m"> Male <br>
+            <input type="radio"> Female <br>
+            <input type="radio"> Other <br>
+            
+            <label for="email">Email Address:</label> <br>
+                <input type="email"> <br>
+
+            <label for="date">Start Date:</label><br>
+            <input type="date"> <br>
+
+            <input type="submit" name="submit" id="sub">
+          </form>
+        </div>
+        
 </body>
 </html>

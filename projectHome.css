@@ -1,14 +1,21 @@
 header{
      margin: 0;
      font-size: 50px;
-     text-align: center;
      color: cyan;
      font-style: oblique;
-     background-color: rgb(0, 0, 0, .5);
      position: relative;
+     background-color: rgb(0, 0, 0, .5);
+     text-align: center;
  }
  #safeGym{
      color: cyan;
+     text-decoration: none;
+
+ }
+ #safeGym:hover{
+     rotate: 200deg;
+     transition: 3s;
+     transform: rotate(1400deg);
  }
  body
  {
@@ -21,7 +28,7 @@ header{
      flex-direction: row;
      justify-content: space-evenly;
      align-items: flex-start;
-     position: absolute;
+     position: fixed;
      background-color: rgb(0, 0, 0, .75);
  }
  #home{
@@ -55,23 +62,31 @@ header{
     color: pink;
  }
  .dropdown-content{
-     display:none;
+     margin: 0;
+     padding: 0px;
+     display: none;
      background-color: lightslategray;
+     border: 5px solid black; 
+     position: absolute;
  }
  .dropdown-content #merches {
     color: white;
     text-decoration: none;
-    display: block;
-    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    align-items: center;
+    border: 3px solid white;
   }
 .dropdown-content #merches:hover{
     background-color: black;
 }
 #merch:hover .dropdown-content{
-    display: block;
+    display: grid;
 }
 #merch:hover #merchLink{
-    background-color: lightslategray;
+    text-shadow: 0 0 15px white;
 }
  #about{
      font-style: initial;
@@ -108,7 +123,6 @@ header{
      width: 100%;
      
  }
-
  .picture{
      margin: 0;
      width: 100%;
@@ -116,3 +130,37 @@ header{
      background-image: url(https://campusrecmag.com/rec-month-iu-indiana-university/srsc_cardio_studio/);
      object-fit: contain;
  }
+ #memberLink{
+    color: pink;
+ }
+ #memberLink:hover{
+     text-shadow: 0 0 15px white;
+
+ }
+ .drop-Mem{
+    margin: 0;
+    padding: 0px;
+    display: none;
+    background-color: lightslategray;
+    border: 5px solid black; 
+    position: absolute;
+}
+.drop-Mem #mem {
+   color: white;
+   text-decoration: none;
+   display: flex;
+   flex-direction: column;
+   justify-content: left;
+   text-align: left;
+   align-items: center;
+   border: 3px solid white;
+ }
+.drop-Mem #mem:hover{
+   background-color: black;
+}
+#Member:hover .drop-Mem{
+   display: grid;
+}
+#Member:hover #memberLink{
+   text-shadow: 0 0 15px white;
+}
