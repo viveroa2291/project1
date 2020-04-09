@@ -88,6 +88,12 @@ header{
 #merch:hover #merchLink{
     text-shadow: 0 0 15px white;
 }
+#exerciseLink{
+    color: pink;
+}
+#exerciseLink:hover{
+    text-shadow: 0 0 15px white;
+}
  #about{
      font-style: initial;
      color: pink;

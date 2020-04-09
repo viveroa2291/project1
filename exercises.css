@@ -1,0 +1,48 @@
+#youtube{
+    margin: 10 0 0 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+#workouts{
+    margin: 25 50 0 50;
+    color: lightblue;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+#myWorkouts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+#actualWorkouts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+  
+}
+#work{
+    font-size: 20px;
+    border: solid black 2px ;
+    width: 250;
+    height: 100;
+    justify-content: center;
+    align-items: center;
+    align-content: center;  
+    background-color: pink;
+}
+#work1{
+    font-size: 20px;
+    border: solid black 2px ;
+    width: 250;
+    height: 100;
+    justify-content: center;
+    align-items: center;
+    align-content: center;  
+    background-color: pink;
+}

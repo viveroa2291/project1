@@ -22,8 +22,8 @@
             </ul> 
             </nav>
             <div id="about"> <a id="aboutLink" href="https://viveroa2291.duckdns.org:8443/about.html" target="_blank" style="text-decoration: none;">About</a></div>
-        <div id="exercises">Useful Exercises</div>
-        <nav id="Member">
+            <div id="exercises"> <a id="exerciseLink" href="https://viveroa2291.duckdns.org:8443/exercises.html" target="_blank" style="text-decoration: none;">Useful Exercises</a></div>
+            <nav id="Member">
             <div id="enrollment"> <a id="memberLink" href="https://viveroa2291.duckdns.org:8443/membership.html" target="_blank" style="text-decoration: none;">Membership</a> </div>
             <ul class="drop-Mem">
                 <a id="mem" href="https://viveroa2291.duckdns.org:8443/membership.html">Membership Information</a>
@@ -32,7 +32,7 @@
         </nav>
         </div>
 <div id="enrolling">
-    <form> 
+    <form action="https://viveroa2291.duckdns.org:8443/enrollment.html" method="GET" id="memberInfo"> 
             <label for="fname"> First name: </label><br>
             <input type="text" id="fname" name="fname"><br>
 
@@ -57,8 +57,22 @@
             <label for="date">Start Date:</label><br>
             <input type="date"> <br>
 
-            <input type="submit" name="submit" id="sub">
+            <input type="submit" name="submit" value="Send" id="sub">
+            <button type="submit" formaction="/login.php">Submit</button>
           </form>
+          <script>
+          const memberInfo = document.getElementById("memberInfo");
+          memberInfo.addEventListener("submit", (e) => {
+              e.preventDefault();
+
+              const request = new XMLHttpRequest();
+               request.open("post", "login.php");
+               request.onload = function () {
+                   console.log(request.responseText );
+               }
+              request.send(new FormData(memberInfo));
+          })
+          </script>
         </div>
         
 </body>

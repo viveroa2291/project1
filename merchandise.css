@@ -1,0 +1,66 @@
+#gender{
+    margin: 25 0 0 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+#male{
+    color: darkblue;
+    border: black solid 3px;
+    padding: 0 25 0 25;
+    cursor: pointer;
+}
+#female{
+    cursor: pointer;
+    color: pink;
+    border: black solid 3px;
+    padding: 0 25 0 25;
+}
+#female:hover{
+    text-shadow: 0 0 15px white;
+    background-color: hotpink;
+}
+#male:hover{
+    text-shadow: 0 0 15px white;
+    background-color: gray;
+}
+#sites{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#nike{
+    border: solid black 3px;
+    padding: 0 100 0 100;
+}
+#GymShark{
+    border: solid black 3px;
+    padding: 0 100 0 100;
+}
+#Lulu{
+    border: solid black 3px;
+    padding: 0 100 0 100;
+}
+#nike:hover{
+    text-shadow: 0 0 15px white;
+    background-color: white;
+    cursor: pointer;
+}
+#GymShark:hover{
+    text-shadow: 0 0 15px white;
+    background-color: red;
+    cursor: pointer;
+}
+#Lulu:hover{
+    text-shadow: 0 0 15px white;
+    background-color: gray;
+    cursor: pointer;
+}
+#pictures{
+    display: flex;
+    flex-direction: row;
+    width: 500;
+    height: 250;
+}
