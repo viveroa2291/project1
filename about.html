@@ -29,21 +29,88 @@
             </ul>
         </nav>
     </div>
-<div id="Description">
-    <p id="para">The safeGym is designed for you to workout comfortably anywhere you are in the gym. </p>
-    <p id="para">We offer a general area where anyone can do their workouts in public, but also a lot of private rooms if you want to workout privately, and judge free.</p>
-    <p id="para">The main focus of this gym is to provide the customers the best environment to workout and work at the body of your dreams with no distractions.</p>
-    <p id="para">Members of safeGym get to use any part of the facility anytime they want.</p>
-    <p id="para">Private rooms are first come first serve, there is no reservations, everyone is free to use it.</p>
-</div>
-    <button id="gallery">Gallery</button>
-<span id="gal">
-    <img class="gym1Pic" src="./img/gym1.jpeg" alt="gym1">
-    <img class="gym2Pic" src="./img/gym2.jpeg" alt="gym2">
-    <img class="gym3Pic" src="./img/gym3.jpeg" alt="gym3">
-    <img class="gym4Pic" src="./img/gym4.jpeg" alt="gym4">
-</span>
-</div>
-    <img class="adan" src="./img/adan.jpg" alt="Adan">
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 6</div>
+      <img id="pic" src="./img/gym1.jpeg" style="width:100%">
+      <div class="text">The safeGym is designed for you to workout comfortably anywhere you are in the gym.</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 6</div>
+      <img id="pic" src="./img/gym2.jpeg" style="width:100%">
+      <div class="text">We offer a general area where anyone can do their workouts in public, but also a lot of private rooms if you want to workout privately, and judge free.</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 6</div>
+      <img id="pic" src="./img/gym3.jpeg" style="width:100%">
+      <div class="text">The main focus of this gym is to provide the customers the best environment to workout and work at the body of your dreams with no distractions.</div>
+    </div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img id="pic" src="./img/gym4.jpeg" style="width:100%">
+        <div class="text">This other</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img id="pics" src="./img/gym5.jpg" style="width:100%">
+        <div class="text">Members of safeGym get to use any part of the facility anytime they want.</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img id="pics" src="./img/gym6.jpg" style="width:100%">
+        <div class="text">Private rooms are first come first serve, there is no reservations, everyone is free to use it.</div>
+    </div>
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)" style="position: absolute;">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="margin: 0 0 0 700; padding: 115 0 50 0; display: flex; flex-direction: row; align-content: center;  position: absolute;">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+
+  <script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+  </script>
 </body>
 </html>
