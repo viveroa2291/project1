@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>...</title>
+  <style>
+
+body {
+  font-family: sans-serif;
+}
+
+  </style>
+</head>
+<body>
+
+    <input id="textOne" type="text">
+    +
+    <input id="textTwo" type="text">
+    =
+    <span id="sum"></span>
+    <script>
+     const x = document.getElementById('textOne');
+     const y = document.getElementById('textTwo');
+     const z = document.getElementById('sum');
+
+     function updateSum()
+     {
+       
+         if(y.value.match(/^\d+$/) && x.value.match(/^\d+$/)) {
+             sum.innerText = parseInt(x.value) + parseInt(y.value);
+         }
+         else
+         {
+             sum.innerText = "";
+         }
+     }
+         x.addEventListener('input', updateSum);
+         y.addEventListener("input", updateSum);
+     
+    </script>
+    
+  <!-- Add your HTML and JavaScript here. -->
+
+</body>
+</html>
